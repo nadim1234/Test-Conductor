@@ -1,0 +1,126 @@
+*{
+padding: 0;
+margin: 0;
+}
+.container{
+    display:flex;
+    height:90vh;
+}
+.questions{
+    width:70vw;
+    background-color: grey;
+    height:100%;
+}
+.questionPalette{
+    height:100%;
+    width:30vw;
+    background-color: greenyellow;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
+}
+.holder{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid red;
+    /* height:80%; */
+    width:80%;
+    gap:10px;
+}
+
+span{
+    background-color:brown;
+    box-sizing: border-box;
+    /* height:20px; */
+    padding:20px;
+    display: inline-block;
+    font-size: 20px;
+    color:white;
+    border-radius: 50%;
+}
+.question_holder{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:7px;
+    height: 90%;
+}
+
+.question{
+    background-color: green;
+    width:80%;
+    padding:10px;
+    border-radius: 15px;
+}
+.answers{
+    /* background-color: blue; */
+    width:80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.answer{
+    background-color: red;
+    padding:10px;
+    border-radius: 15px;
+}
+.footer{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+    height: 10%;
+}
+
+.footer button{
+    height:40px;
+    width:80px;
+    outline: none;
+    border:none;
+    background-color:blue;
+    border-radius: 10px;
+    color:white;
+}
+.footer button:hover{
+    color:blue;
+    background-color: white;
+}
+.header{
+    height:10vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+
+.current{
+    background-color: plum;
+}
+.answered{
+    background-color: green;
+}
+.answerClicked{
+    background-color: green;
+}
+
+.modal{
+    background-color: #333;
+    height:400px;
+    width:600px;
+    position:absolute;
+    top:21%;
+    left:21%;
+    z-index: 10;
+}
+
+.backdrop{
+    position: absolute;
+    background-color: rgba(49, 43, 43, 0.6);
+    height:100vh;
+    width: 100vw;
+    z-index:7;
+}
